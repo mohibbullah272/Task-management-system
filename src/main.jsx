@@ -8,11 +8,17 @@ import {
 } from "react-router-dom";
 import Main from './Layout/Main.jsx';
 import AuthProvider from './AuthProvider/AuthProvider.jsx';
+import AuthPage from './Page/AuthPage.jsx';
+import PrivetRoute from './Route/PrivetRoute.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Main></Main>,
+    element: <PrivetRoute><Main></Main></PrivetRoute>,
   },
+  {
+    path:'/authPage',
+    element:<AuthPage></AuthPage>
+  }
 ]);
 createRoot(document.getElementById('root')).render(
   <StrictMode>

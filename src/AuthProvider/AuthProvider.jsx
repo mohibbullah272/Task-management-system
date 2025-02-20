@@ -23,8 +23,12 @@ const logout =()=>{
 }
 useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-      setLoading(false);
-      setUser(currentUser ? currentUser : null);
+    if(currentUser){
+        setLoading(false)
+        setUser(currentUser)
+    }else{
+        setUser(null)
+    }
     });
 
  
