@@ -1,11 +1,20 @@
 import React from 'react';
 import ThemeSwitcher from '../shared/ThemeSwitcher';
+import Navbar from '../shared/Navbar';
+import { Outlet } from 'react-router-dom';
 
 const Main = () => {
     return (
         <div>
-            <p className='text-3xl text-red-950'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, non?</p>
-            <ThemeSwitcher></ThemeSwitcher>
+       <header>
+        <Navbar></Navbar>
+       </header>
+       <main>
+        <Outlet></Outlet>
+       </main>
+       <footer>
+        
+       </footer>
         </div>
     );
 };
