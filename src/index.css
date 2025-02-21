@@ -6,9 +6,9 @@
 
 :root {
   --background-light: #ffffff;
-  --background-dark: #1e1e1e;
+  --background-dark: #1d1c1c;
   --primary-light: #007bff;
-  --primary-dark: #6a0dad;
+  --primary-dark: #4d4057;
   --text-light: #000000;
   --text-dark: #ffffff;
   --accent-light: #e0e0e0;
@@ -21,6 +21,8 @@
 }
 
 [data-theme="dark"] {
-  background-color: var(--background-dark);
-  color: var(--text-dark);
+  background-color: var(--primary-dark);
+  color: var(--text-light);
 }
+
+

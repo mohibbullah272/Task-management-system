@@ -1,5 +1,4 @@
 import React from 'react';
-import ThemeSwitcher from '../shared/ThemeSwitcher';
 import Navbar from '../shared/Navbar';
 import { Outlet } from 'react-router-dom';
 
@@ -9,7 +8,7 @@ const Main = () => {
        <header>
         <Navbar></Navbar>
        </header>
-       <main>
+       <main className='max-w-7xl mx-auto '>
         <Outlet></Outlet>
        </main>
        <footer>
